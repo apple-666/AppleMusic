@@ -1,0 +1,158 @@
+@charset "GBK";
+
+body {
+  background-image: url("../img/鹏6.jpg") ;
+  background-size: auto;
+}
+
+.banner {
+  width: 2200px;
+  height: 480px;
+  /* background: url("../img/bg1.jpg");
+  background-size: contain; */
+  background:rgba(38, 45, 50, 0.5);
+  margin: 60px;
+  /* opacity: 0.80; */
+  box-shadow: 10px 15px 15px 1px black;
+  position:relative;
+}
+
+.banner {
+  top:1px;
+  left:100px;
+  
+}
+
+.banner ul li{
+  list-style: none;
+  display: inline-block;
+  position:absolute;
+}
+
+.banner ul li img{
+  width: 280px;
+  height: 280px;
+  border-radius:50%;
+  cursor:pointer;  /*光标变手势*/
+  float:left;
+  
+}
+
+.music1{  top:80px;left:80px; }
+.music2{  top:80px;left:243px; }
+.music3{  top:80px;left:406px; }
+.music4{  top:80px;left:569px; }
+.music5{  top:80px;left:732px; }
+.music6{  top:80px;left:895px;  }
+.music7{  top:80px;left:1058px;}
+.music8{  top:80px;left:1228px;}
+.music9{  top:80px;left:1391px;}
+.music10{ top:80px;left:1550px;}
+.music11{ top:80px;left:1713px;}
+.music12{ top:80px;left:1880px;} 
+
+.music_on {
+  width: 720px;
+  height: 180px;
+  background:black;
+  position:fixed;
+  left:0px;
+  bottom:50px;
+  opacity: 0.7;
+  box-shadow: 10px 15px 15px 1px black;
+}
+
+/*无效*/
+/* .music_img {
+  top: 10px;
+  left: 10px;
+  float: left;
+} */
+
+.music_on .music_img {
+  margin-top: 15px;
+  margin-left: 10px;
+  float: left;
+}
+
+.music_on .music_text {
+  float: left;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-left: 30px;
+}
+
+.music_on .music_btn {
+  float: left;
+  /*绝对位置，防止左边的歌名太长*/
+  position: absolute;
+  left: 450px;
+  top: 20px;
+}
+
+.music_on .music_btn a {
+  float: left;
+  width: 35px;
+  height: 35px;
+  background: url("../img/player_bg.png");
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.music_on .music_btn .music_prev {
+  background-position: -72px 5px;
+}
+.music_on .music_btn .music_prev:hover {
+  background-position: -72px -27px;
+}
+
+.music_on .music_btn .music_play {
+  background-position: -103px -1px;
+}
+.music_on .music_btn .music_play:hover {
+  background-position: -103px -44px;
+}
+
+.music_on .music_btn .music_pause {
+  background-position: -295px -87px;
+}
+.music_on .music_btn .music_pause:hover {
+  background-position: -338px -87px;
+}
+
+.music_on .music_btn .music_next {
+  background-position: -148px 7px;
+}
+.music_on .music_btn .music_next:hover { 
+  background-position: -148px -26px;
+}
+
+.music_on .music_hide {
+  float: right;
+  background: url("../img/player_bg.png") no-repeat;
+  background-position: 0px 0px;
+  width: 20px;
+  height: 120px;
+  margin-top: 31px;
+  cursor: pointer;
+}
+
+/* 图片旋转的动画 */
+@keyframes img_rotate {
+  from {
+      transform: rotate(0deg);
+  } to {
+      transform: rotate(360deg);
+  }
+}
+ /* 动画执行的时间和次数 */
+ .banner .img_rotate{
+  animation: img_rotate 4s infinite; 
+}
+
+.music_on .music_appe {
+  background: url("../img/player_bg.png") no-repeat;
+  background-position: -49px 0px;
+}
